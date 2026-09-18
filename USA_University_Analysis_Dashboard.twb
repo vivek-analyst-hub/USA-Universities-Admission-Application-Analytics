@@ -1,0 +1,2202 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Metrics' datatype='string' name='[Parameter 0606151469510657]' param-domain-type='list' role='measure' type='nominal' value='&quot;GRE&quot;'>
+        <calculation class='tableau' formula='&quot;GRE&quot;' />
+        <members>
+          <member value='&quot;GRE&quot;' />
+          <member value='&quot;TOEFL&quot;' />
+          <member value='&quot;IELTS&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='university_analysis_data' inline='true' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='university_analysis_data' name='textscan.0ks8mjw067b9hm17rhyku0nq21or'>
+            <connection class='textscan' directory='C:/My Project Files/USE Project' filename='university_analysis_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ks8mjw067b9hm17rhyku0nq21or' name='university_analysis_data.csv' table='[university_analysis_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='Name' ordinal='0' />
+            <column datatype='string' name='University' ordinal='1' />
+            <column datatype='string' name='Course' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Season' ordinal='4' />
+            <column datatype='string' name='Status' ordinal='5' />
+            <column datatype='integer' name='GRE_SCORE' ordinal='6' />
+            <column datatype='string' name='Eng_test' ordinal='7' />
+            <column datatype='real' name='Test_score' ordinal='8' />
+            <column datatype='real' name='Undergrad_score' ordinal='9' />
+            <column datatype='string' name='Undergrad_score_Metric' ordinal='10' />
+            <column datatype='integer' name='work_ex (Months)' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>University</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[University]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>University</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Course</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Course]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Course</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GRE_SCORE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GRE_SCORE]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>GRE_SCORE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Eng_test</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Eng_test]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Eng_test</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Test_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Test_score]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Test_score</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Undergrad_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Undergrad_score]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Undergrad_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Undergrad_score_Metric</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Undergrad_score_Metric]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>Undergrad_score_Metric</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_ex (Months)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[work_ex (Months)]</local-name>
+            <parent-name>[university_analysis_data.csv]</parent-name>
+            <remote-alias>work_ex (Months)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='IELTS Scroe' datatype='real' name='[Calculation_0412087330021376]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Eng_test]=&quot;IELTS&quot; THEN [Test_score] END' />
+      </column>
+      <column caption='TOEFL Score' datatype='real' name='[Calculation_0412087330664449]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Eng_test]=&quot;TOEFL&quot; THEN [Test_score] END' />
+      </column>
+      <column aggregation='Sum' caption='Work exp in Year' datatype='real' name='[Calculation_0606151454785536]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[work_ex (Months)]/12' />
+      </column>
+      <column caption='Select Metrics' datatype='real' name='[Calculation_0606151470944258]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 0606151469510657]&#13;&#10;WHEN &quot;GRE&quot; THEN AVG([GRE_SCORE])&#13;&#10;WHEN &quot;IELTS&quot; THEN AVG([Calculation_0412087330021376])&#13;&#10;WHEN &quot;TOEFL&quot; THEN AVG([Calculation_0412087330664449])&#13;&#10;END' />
+      </column>
+      <column caption='Index' datatype='integer' name='[Calculation_0606151480152067]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Percentage Rejected' datatype='real' name='[Calculation_0606151482363908]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Status]=&quot;Reject&quot; THEN 1 ELSE 0 END)/COUNT([Status])' />
+      </column>
+      <column caption='Percentage Admitted' datatype='real' name='[Calculation_0606151483990021]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Status]=&quot;Admit&quot; THEN 1 ELSE 0 END)/COUNT([Status])' />
+      </column>
+      <column caption='Donut' datatype='integer' name='[Calculation_0663600673013761]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='Eng test' datatype='string' name='[Eng_test]' role='dimension' type='nominal' />
+      <column caption='Gre Score' datatype='integer' name='[GRE_SCORE]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+      <column caption='Test score' datatype='real' name='[Test_score]' role='measure' type='quantitative' />
+      <column caption='Undergrad score' datatype='real' name='[Undergrad_score]' role='measure' type='quantitative' />
+      <column caption='Undergrad score Metric' datatype='string' name='[Undergrad_score_Metric]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='university_analysis_data.csv' datatype='table' name='[__tableau_internal_object_id__].[university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB]' role='measure' type='quantitative' />
+      <column caption='work ex (Months)' datatype='integer' name='[work_ex (Months)]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0412087330021376]' derivation='Avg' name='[avg:Calculation_0412087330021376:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0412087330664449]' derivation='Avg' name='[avg:Calculation_0412087330664449:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GRE_SCORE]' derivation='Avg' name='[avg:GRE_SCORE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_0412087330664449]' derivation='Sum' name='[sum:Calculation_0412087330664449:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0606151470944258]' derivation='User' name='[usr:Calculation_0606151470944258:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#0a3161'>
+              <bucket>&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Calculation_0412087330664449:qk]&quot;</bucket>
+            </map>
+            <map to='#b31942'>
+              <bucket>&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:GRE_SCORE:qk]&quot;</bucket>
+            </map>
+            <map to='#b31942'>
+              <bucket>&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[sum:Calculation_0412087330664449:qk]&quot;</bucket>
+            </map>
+            <map to='#b31942'>
+              <bucket>&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]&quot;</bucket>
+            </map>
+            <map to='#ffffff'>
+              <bucket>&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Calculation_0412087330021376:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Status:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Admit&quot;</bucket>
+            </map>
+            <map to='#b31942'>
+              <bucket>&quot;Reject&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Applied&quot;</bucket>
+            </map>
+            <map to='#f9a655'>
+              <bucket>&quot;Interested&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Status:nk]' type='shape'>
+            <map to='Bug Tracking/mail.png'>
+              <bucket>&quot;Applied&quot;</bucket>
+            </map>
+            <map to='Thin Arrows/1.png'>
+              <bucket>&quot;Reject&quot;</bucket>
+            </map>
+            <map to='Thin Arrows/5.png'>
+              <bucket>&quot;Admit&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;Interested&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Metrics' datatype='string' name='[Parameter 0606151469510657]' param-domain-type='list' role='measure' type='nominal' value='&quot;GRE&quot;'>
+          <calculation class='tableau' formula='&quot;GRE&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='university_analysis_data.csv' id='university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB'>
+            <properties context=''>
+              <relation connection='textscan.0ks8mjw067b9hm17rhyku0nq21or' name='university_analysis_data.csv' table='[university_analysis_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+                  <column datatype='string' name='Name' ordinal='0' />
+                  <column datatype='string' name='University' ordinal='1' />
+                  <column datatype='string' name='Course' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='string' name='Season' ordinal='4' />
+                  <column datatype='string' name='Status' ordinal='5' />
+                  <column datatype='integer' name='GRE_SCORE' ordinal='6' />
+                  <column datatype='string' name='Eng_test' ordinal='7' />
+                  <column datatype='real' name='Test_score' ordinal='8' />
+                  <column datatype='real' name='Undergrad_score' ordinal='9' />
+                  <column datatype='string' name='Undergrad_score_Metric' ordinal='10' />
+                  <column datatype='integer' name='work_ex (Months)' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Percentage of  Rejected'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='6'>Percentage of Rejected</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+            <column caption='Percentage Rejected' datatype='real' name='[Calculation_0606151482363908]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Status]=&quot;Reject&quot; THEN 1 ELSE 0 END)/COUNT([Status])' />
+            </column>
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[University]' role='dimension' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0606151482363908]' derivation='User' name='[usr:Calculation_0606151482363908:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:University:nk]' member='&quot;Arizona State University&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151482363908:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' scope='rows' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#0a3161' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='15' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b31942' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#b31942' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151482363908:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.47176796197891235' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#b00000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E391569F-ADC7-4CD4-B8C7-BD5A9DE4EDBF}' />
+    </worksheet>
+    <worksheet name='Percentage of Admitted'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='6'>Percentage of Admitted</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+            <column caption='Percentage Admitted' datatype='real' name='[Calculation_0606151483990021]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Status]=&quot;Admit&quot; THEN 1 ELSE 0 END)/COUNT([Status])' />
+            </column>
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[University]' role='dimension' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0606151483990021]' derivation='User' name='[usr:Calculation_0606151483990021:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:University:nk]' member='&quot;Arizona State University&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='auto' />
+            <format attr='text-align' data-class='subtotal' scope='cols' value='auto' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151483990021:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' scope='rows' value='auto' />
+            <format attr='text-align' data-class='subtotal' scope='cols' value='auto' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#000000' />
+            <format attr='text-align' scope='cols' value='auto' />
+            <format attr='text-align' scope='rows' value='auto' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#0a3161' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b31942' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#b31942' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151483990021:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.32883977890014648' />
+                <format attr='mark-color' value='#000055' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{51E24DF3-9332-43DD-849D-8C4EE8EE6BDF}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Undergrad score' datatype='real' name='[Undergrad_score]' role='measure' type='quantitative' />
+            <column caption='Undergrad score Metric' datatype='string' name='[Undergrad_score_Metric]' role='dimension' type='nominal' />
+            <column datatype='string' name='[University]' role='dimension' type='nominal' />
+            <column-instance column='[Undergrad_score]' derivation='Avg' name='[avg:Undergrad_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Undergrad_score_Metric]' derivation='None' name='[none:Undergrad_score_Metric:nk]' pivot='key' type='nominal' />
+            <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]'>
+            <groupfilter function='member' level='[none:University:nk]' member='&quot;Arizona State University&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Undergrad_score_Metric:nk]' value='114' />
+            <format attr='border-color' scope='cols' value='#ffffff' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Undergrad_score:qk]' value='' />
+            <format attr='text-format' data-class='subtotal' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Undergrad_score:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' data-class='total' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Undergrad_score:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Undergrad_score_Metric:nk]' value='10' />
+            <format attr='background-color' value='#b31942' />
+            <format attr='border-color' scope='cols' value='#ffffff' />
+            <format attr='border-style' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#0a3161' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Undergrad_score:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Undergrad_score_Metric:nk]</cols>
+      </table>
+      <simple-id uuid='{8FBF64D0-8DA4-4F84-BB93-E33C477C9D10}' />
+    </worksheet>
+    <worksheet name='Universities with Highest Average Scores'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='12'><![CDATA[Universities with Highest Average Scores <]]></run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='12'>[Parameters].[Parameter 0606151469510657]</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='12'>&gt; </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metrics' datatype='string' name='[Parameter 0606151469510657]' param-domain-type='list' role='measure' type='nominal' value='&quot;GRE&quot;'>
+              <calculation class='tableau' formula='&quot;GRE&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+            <column caption='IELTS Scroe' datatype='real' name='[Calculation_0412087330021376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Eng_test]=&quot;IELTS&quot; THEN [Test_score] END' />
+            </column>
+            <column caption='TOEFL Score' datatype='real' name='[Calculation_0412087330664449]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Eng_test]=&quot;TOEFL&quot; THEN [Test_score] END' />
+            </column>
+            <column caption='Select Metrics' datatype='real' name='[Calculation_0606151470944258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 0606151469510657]&#13;&#10;WHEN &quot;GRE&quot; THEN AVG([GRE_SCORE])&#13;&#10;WHEN &quot;IELTS&quot; THEN AVG([Calculation_0412087330021376])&#13;&#10;WHEN &quot;TOEFL&quot; THEN AVG([Calculation_0412087330664449])&#13;&#10;END' />
+            </column>
+            <column caption='Index' datatype='integer' name='[Calculation_0606151480152067]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Eng test' datatype='string' name='[Eng_test]' role='dimension' type='nominal' />
+            <column caption='Gre Score' datatype='integer' name='[GRE_SCORE]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Test score' datatype='real' name='[Test_score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[University]' role='dimension' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0606151470944258]' derivation='User' name='[usr:Calculation_0606151470944258:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0606151480152067]' derivation='User' name='[usr:Calculation_0606151480152067:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' direction='DESC' using='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' />
+          <filter class='quantitative' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151480152067:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>6</max>
+          </filter>
+          <slices>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151480152067:qk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#0a3161' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-color' value='#000055' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]</rows>
+        <cols>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</cols>
+      </table>
+      <simple-id uuid='{AD46217D-D766-442E-8E13-37DC1C923EBD}' />
+    </worksheet>
+    <worksheet name='University Status by Score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='12'>&lt;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='12'>[Parameters].[Parameter 0606151469510657]</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='12'>&gt; University Status by Score</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metrics' datatype='string' name='[Parameter 0606151469510657]' param-domain-type='list' role='measure' type='nominal' value='&quot;GRE&quot;'>
+              <calculation class='tableau' formula='&quot;GRE&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+            <column caption='IELTS Scroe' datatype='real' name='[Calculation_0412087330021376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Eng_test]=&quot;IELTS&quot; THEN [Test_score] END' />
+            </column>
+            <column caption='TOEFL Score' datatype='real' name='[Calculation_0412087330664449]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Eng_test]=&quot;TOEFL&quot; THEN [Test_score] END' />
+            </column>
+            <column aggregation='Sum' caption='Work exp in Year' datatype='real' name='[Calculation_0606151454785536]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[work_ex (Months)]/12' />
+            </column>
+            <column caption='Select Metrics' datatype='real' name='[Calculation_0606151470944258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 0606151469510657]&#13;&#10;WHEN &quot;GRE&quot; THEN AVG([GRE_SCORE])&#13;&#10;WHEN &quot;IELTS&quot; THEN AVG([Calculation_0412087330021376])&#13;&#10;WHEN &quot;TOEFL&quot; THEN AVG([Calculation_0412087330664449])&#13;&#10;END' />
+            </column>
+            <column caption='Eng test' datatype='string' name='[Eng_test]' role='dimension' type='nominal' />
+            <column caption='Gre Score' datatype='integer' name='[GRE_SCORE]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Test score' datatype='real' name='[Test_score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[University]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0606151454785536]' derivation='Attribute' name='[attr:Calculation_0606151454785536:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0606151454785536]' derivation='None' name='[none:Calculation_0606151454785536:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0606151470944258]' derivation='User' name='[usr:Calculation_0606151470944258:qk]' pivot='key' type='quantitative' />
+            <column caption='work ex (Months)' datatype='integer' name='[work_ex (Months)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]'>
+            <groupfilter function='member' level='[none:University:nk]' member='&quot;University of Cincinnati&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[attr:Calculation_0606151454785536:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Calculation_0606151454785536:ok]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[attr:Calculation_0606151454785536:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#0a3161' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' />
+              <size column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Calculation_0606151454785536:ok]' />
+              <tooltip column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[attr:Calculation_0606151454785536:qk]' />
+              <tooltip column='[Parameters].[Parameter 0606151469510657]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Status</run>
+                <run fontcolor='#000000'>:</run>
+                <run fontcolor='#b00000'>Æ&#9;</run>
+                <run bold='true' fontcolor='#b00000'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Work experience in Years:</run>
+                <run fontcolor='#e6e6e6'>:</run>
+                <run bold='true' fontcolor='#898989'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[attr:Calculation_0606151454785536:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Selected Parameter -</run>
+                <run fontcolor='#00006b'>:</run>
+                <run bold='true' fontcolor='#00006b'><![CDATA[<[Parameters].[Parameter 0606151469510657]>  <[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.1754143238067627' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[usr:Calculation_0606151470944258:qk]</rows>
+        <cols>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</cols>
+      </table>
+      <simple-id uuid='{B2E8E65D-4513-4768-A1BC-800A61777AFD}' />
+    </worksheet>
+    <worksheet name='Year-wise Average Score Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans' fontsize='14'>Year-wise Average Score Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+            <column caption='IELTS Scroe' datatype='real' name='[Calculation_0412087330021376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Eng_test]=&quot;IELTS&quot; THEN [Test_score] END' />
+            </column>
+            <column caption='TOEFL Score' datatype='real' name='[Calculation_0412087330664449]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Eng_test]=&quot;TOEFL&quot; THEN [Test_score] END' />
+            </column>
+            <column caption='Donut' datatype='integer' name='[Calculation_0663600673013761]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='Eng test' datatype='string' name='[Eng_test]' role='dimension' type='nominal' />
+            <column caption='Gre Score' datatype='integer' name='[GRE_SCORE]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Test score' datatype='real' name='[Test_score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[University]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_0412087330021376]' derivation='Avg' name='[avg:Calculation_0412087330021376:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0412087330664449]' derivation='Avg' name='[avg:Calculation_0412087330664449:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GRE_SCORE]' derivation='Avg' name='[avg:GRE_SCORE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0663600673013761]' derivation='Min' name='[min:Calculation_0663600673013761:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:GRE_SCORE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Calculation_0412087330021376:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[avg:Calculation_0412087330664449:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:University:nk]' member='&quot;Arizona State University&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]</column>
+            <column>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Year:ok]' value='29' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#69aaa5' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' scope='cols' value='#555555' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='border-color' scope='rows' value='#1b1b1b' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' scope='cols' value='#1b1b1b' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#f1ce63' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#f1ce632f' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#f5f5f5' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#f1ce63' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#f28e2b' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#0a3161' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' value='330' />
+            <format attr='color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='#ffffff' />
+            <format attr='font-weight' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='bold' />
+            <format attr='font-family' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='Lucida Sans' />
+            <format attr='border-style' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='solid' />
+            <format attr='border-width' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='2' />
+            <format attr='background-color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='#dddfe1' />
+            <format attr='border-color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='#dddfe1' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='#000000' />
+            <format attr='font-family' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='Tableau Medium' />
+            <format attr='text-align' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' id='legend-color' value='center' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='University'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Lucida Sans'>University</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' value='Status'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Lucida Sans'>Status</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' value='Season'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Lucida Sans'>Season</run>
+              </formatted-text>
+            </format>
+            <format attr='background-color' value='#00000000' />
+            <format attr='color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='#000000' />
+            <format attr='color' value='#ffffff' />
+            <format attr='color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' value='#000000' />
+            <format attr='color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' value='#000000' />
+            <format attr='border-color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='#ffffff' />
+            <format attr='border-style' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='solid' />
+            <format attr='border-width' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='2' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+            <format attr='color' field='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Year:</run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Year:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[__tableau_internal_object_id__].[cnt:university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' />
+              <wedge-size column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[Multiple Values]' />
+              <text column='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[Multiple Values]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Year:</run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Year:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[__tableau_internal_object_id__].[cnt:university_analysis_data.csv_4229459332BC4B4CB3037BD7ABD076CB:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#666666' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#1b1b1b67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Year:</run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Year:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Count:&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3073480129241943' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#666666' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#1b1b1b67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk] + [federated.076j0tm1rbz3zx16a9gnv10lw9wo].[min:Calculation_0663600673013761:qk])</rows>
+        <cols>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{EEFFA884-5243-4F10-BFF6-E112E2DD1147}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='USA Universities: Admission &amp; Application Analytics'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans'>USA Universities: Admission &amp; Application Analytics</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#dddfe1' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#0a3161' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#0a3161' />
+        </style-rule>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' field='[Parameters].[Parameter 0606151469510657]' value='#000000' />
+          <format attr='border-color' field='[Parameters].[Parameter 0606151469510657]' value='#ffffff' />
+          <format attr='border-style' field='[Parameters].[Parameter 0606151469510657]' value='solid' />
+          <format attr='border-width' field='[Parameters].[Parameter 0606151469510657]' value='2' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='text-align' field='[Parameters].[Parameter 0606151469510657]' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='university_analysis_data' name='federated.076j0tm1rbz3zx16a9gnv10lw9wo' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Metrics' datatype='string' name='[Parameter 0606151469510657]' param-domain-type='list' role='measure' type='nominal' value='&quot;GRE&quot;'>
+          <calculation class='tableau' formula='&quot;GRE&quot;' />
+          <members>
+            <member value='&quot;GRE&quot;' />
+            <member value='&quot;TOEFL&quot;' />
+            <member value='&quot;IELTS&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.076j0tm1rbz3zx16a9gnv10lw9wo'>
+        <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+        <column datatype='string' name='[University]' role='dimension' type='nominal' />
+        <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+        <column-instance column='[University]' derivation='None' name='[none:University:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98014' id='53' param='horz' type-v2='layout-flow' w='99002' x='499' y='993'>
+            <zone h='98014' id='45' param='vert' type-v2='layout-flow' w='99002' x='499' y='993'>
+              <zone fixed-size='81' h='11043' id='46' is-fixed='true' type-v2='title' w='99002' x='499' y='993'>
+                <zone-style>
+                  <format attr='border-color' value='#898989' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='86971' id='21' param='horz' type-v2='layout-flow' w='99002' x='499' y='12036'>
+                <zone h='86971' id='5' type-v2='layout-basic' w='99002' x='499' y='12036'>
+                  <zone h='37964' id='3' name='Year-wise Average Score Trend' w='85238' x='14263' y='12036'>
+                    <zone-style>
+                      <format attr='border-color' value='#898989' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45037' id='11' name='University Status by Score' w='41841' x='14263' y='53970'>
+                    <zone-style>
+                      <format attr='border-color' value='#898989' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45037' id='14' name='Universities with Highest Average Scores' w='43397' x='56104' y='53970'>
+                    <zone-style>
+                      <format attr='border-color' value='#898989' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='10429' id='17' name='Sheet 6' w='13764' x='499' y='12036'>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3970' id='26' leg-item-layout='horz' name='Year-wise Average Score Trend' pane-specification-id='1' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' show-title='false' type-v2='color' w='69608' x='29893' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='10548' id='15' name='Percentage of Admitted' w='13764' x='499' y='22465'>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9272' id='16' name='Percentage of  Rejected' w='13764' x='499' y='33013'>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='10612' id='22' mode='dropdown' name='Year-wise Average Score Trend' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' type-v2='filter' values='relevant' w='13764' x='499' y='42285'>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#0a3161' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9759' id='23' mode='checkdropdown' name='Year-wise Average Score Trend' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' type-v2='filter' values='relevant' w='13764' x='499' y='52897'>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#0a3161' />
+                    </zone-style>
+                  </zone>
+                  <zone custom-title='true' h='26117' id='24' mode='compact' param='[Parameters].[Parameter 0606151469510657]' type-v2='paramctrl' w='13764' x='499' y='72890'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#ffffff' fontname='Lucida Sans'>Score</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#0a3161' />
+                    </zone-style>
+                  </zone>
+                  <zone h='10234' id='25' mode='dropdown' name='Year-wise Average Score Trend' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' type-v2='filter' values='database' w='13764' x='499' y='62656'>
+                    <zone-style>
+                      <format attr='border-color' value='#ffffff' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#0a3161' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3970' id='54' type-v2='empty' w='15630' x='14263' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#dddfe1' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#dddfe1' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='14888' id='49' is-scaled='1' param='C:/Users/dell/Downloads/USA university image.png' type-v2='bitmap' w='11966' x='1143' y='82754'>
+          <zone-style>
+            <format attr='border-color' value='#0a3161' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='background-color' value='#0a3161' />
+          </zone-style>
+        </zone>
+        <zone h='5087' id='50' is-scaled='1' param='C:/Users/dell/Downloads/USA IMAGE.png' type-v2='bitmap' w='2826' x='15033' y='20968' />
+        <zone h='8933' id='51' is-scaled='1' param='C:/Users/dell/Downloads/USA FLAG.png' type-v2='bitmap' w='14251' x='-421' y='1985' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Lucida Sans'>USA Universities: Admission &amp; Application Analytics</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='76' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98014' id='75' param='vert' type-v2='layout-flow' w='99002' x='499' y='993'>
+                <zone fixed-size='81' h='11043' id='46' type-v2='title' w='99002' x='499' y='993'>
+                  <zone-style>
+                    <format attr='border-color' value='#898989' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='8933' id='51' is-fixed='true' is-scaled='1' param='C:/Users/dell/Downloads/USA FLAG.png' type-v2='bitmap' w='14251' x='-421' y='1985'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='70' h='10429' id='17' is-fixed='true' name='Sheet 6' w='13764' x='499' y='12036'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10612' id='22' mode='dropdown' name='Year-wise Average Score Trend' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' type-v2='filter' values='relevant' w='13764' x='499' y='42285'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0a3161' />
+                  </zone-style>
+                </zone>
+                <zone h='9759' id='23' mode='checkdropdown' name='Year-wise Average Score Trend' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' type-v2='filter' values='relevant' w='13764' x='499' y='52897'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0a3161' />
+                  </zone-style>
+                </zone>
+                <zone h='10234' id='25' mode='dropdown' name='Year-wise Average Score Trend' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]' type-v2='filter' values='database' w='13764' x='499' y='62656'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0a3161' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37964' id='3' is-fixed='true' name='Year-wise Average Score Trend' w='85238' x='14263' y='12036'>
+                  <zone-style>
+                    <format attr='border-color' value='#898989' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3970' id='26' leg-item-layout='horz' name='Year-wise Average Score Trend' pane-specification-id='1' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' show-title='false' type-v2='color' w='69608' x='29893' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='40' h='5087' id='50' is-fixed='true' is-scaled='1' param='C:/Users/dell/Downloads/USA IMAGE.png' type-v2='bitmap' w='2826' x='15033' y='20968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='70' h='10548' id='15' is-fixed='true' name='Percentage of Admitted' w='13764' x='499' y='22465'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='60' h='9272' id='16' is-fixed='true' name='Percentage of  Rejected' w='13764' x='499' y='33013'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45037' id='11' is-fixed='true' name='University Status by Score' w='41841' x='14263' y='53970'>
+                  <zone-style>
+                    <format attr='border-color' value='#898989' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45037' id='14' is-fixed='true' name='Universities with Highest Average Scores' w='43397' x='56104' y='53970'>
+                  <zone-style>
+                    <format attr='border-color' value='#898989' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='26117' id='24' mode='compact' param='[Parameters].[Parameter 0606151469510657]' type-v2='paramctrl' w='13764' x='499' y='72890'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontname='Lucida Sans'>Score</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0a3161' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='115' h='14888' id='49' is-fixed='true' is-scaled='1' param='C:/Users/dell/Downloads/USA university image.png' type-v2='bitmap' w='11966' x='1143' y='82754'>
+                  <zone-style>
+                    <format attr='border-color' value='#0a3161' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0a3161' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A35B5FDD-757E-4AFC-A78B-153C8EB51BE6}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' maximized='true' name='USA Universities: Admission &amp; Application Analytics'>
+      <viewpoints>
+        <viewpoint name='Percentage of  Rejected'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Percentage of Admitted'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Universities with Highest Average Scores'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='University Status by Score'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year-wise Average Score Trend'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='22' />
+      <simple-id uuid='{83C7DBAF-50EB-41E2-8DE2-387C600D79E3}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Percentage of  Rejected'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Name:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DC82462B-9702-4395-9DEE-51F5F624E796}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Percentage of Admitted'>
+      <cards>
+        <edge name='left'>
+          <strip size='116'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Name:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{AF8A90F2-776F-421C-884A-D741232CDB6F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Undergrad_score_Metric:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB8151CA-56C5-4300-90A6-6EFA3CF1D4F9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Universities with Highest Average Scores'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 0606151469510657]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9B1058BE-131C-4742-851A-89CE09BB472E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='University Status by Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 0606151469510657]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 0606151469510657]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[attr:Calculation_0606151454785536:qk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Calculation_0606151454785536:ok]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B959ABFC-39B3-4D81-AC51-75E18B3ECFD6}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Year-wise Average Score Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='172'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card mode='dropdown' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]' size='8' type='filter' />
+            <card mode='dropdown' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]' size='19' type='filter' />
+            <card pane-specification-id='1' param='[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[:Measure Names]' size='4' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Season:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Status:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:University:nk]</field>
+            <field>[federated.076j0tm1rbz3zx16a9gnv10lw9wo].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BEAB3C44-B9D5-4E11-8D12-8552D7D9F752}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='USA Universities: Admission &amp; Application Analytics' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nOydd3gc1fWw3ynbV713S7Iky73buOACBtsUm1ADhBIgkISQAD/SSYXkC5BC
+      QksIhJbQeze2scHYBvfeJFlWr6u6fWfu98fKsmRJrqpm3+cxzMydmXtGe8+t55wrFR48JAgR
+      4muKPNAChAgxkKiHD4QINQQhvn6oHU9u/unfqWr09Flm0ik8E1LLEH1JJwWoavRQUus+7kO6
+      iCEpOpry2lbio604mjyoqozVbKCxxUt8tJXqeicJ0TZqGlzERlpJcFTwQO1yNGSQQAiQEIg2
+      tZAkjpT2thMZ+F7sOMpUc+9+dYgQbajHv6UrQpdIT47C4wmQFBOGJCQMqozNYkQWkJ4QQcCn
+      kZEUScCvkxBlI9yaTM4Nt6N1LPDBo7ZzqUsLIUlgfGs7NPVdqxTi680pKYCEoPBQPSOy4th7
+      sI6YSCtev0Zjq5fMtBiKyhyMyI5nT2EtuZmxFJbUY4qyYJ0/B12IYGFvG3NIhzVBgk4qcPi+
+      jw+EFCBEn3FqLQASI7Lj2L63muz0aMqqmjAaFGIirRSW1JOfFceuAzWMzk1g5/5qhqVEYiw8
+      QPGchcEu0NE9+zYlkIQIprQpiCRJBNJmgMF6el8ZIkQPnFoLIMHuglrG5CWyc38VcdE2fH6d
+      ugYnOcNi2V1Uy9gRiWzbW8XI4fEcKK4jIyOLrP99ii4EsiTRVuUH30eHluBILsiKjPrDR6Gi
+      /rQ+MkSInjglBQAYk5vAlt0VDM+IDbYAqkJ8tJ2C4npGD09g+94qxo1IZPveKrJSo7C0NtHy
+      9vvogmAN3/aeTsW+7bpAgBDISIiW1tP4vIFn1IhsKktLcDj9AEwbl81X2wqRVCNLzp1MUoSJ
+      rTv2s3Z3efszk8ePoGDfARrdWpf35eZk0FxTTVVbt3DCmGz27CrEo3ef/9iRWRwsPESLt+u7
+      ToWwiAiyYkxsK6rpdD0qOoqkMIXdh+p6JZ+xo3OoKimhptnbJS1zZD7XT47jN899dtz32MPD
+      yY6zsK2wutv0U14I27a3inEjkigqdRAZbkZWZWodTnIyY9lZUMO4thZgVE48h6qaaC2vpvH5
+      l2j878s0vvASDYf/Pf8SjudfxPHCSzief4n6515su/YyjhdeQm9uOVURBwV3334tE9LD2s//
+      8csbUGT48Z03MivTzr7SekZlJ7enRydn8OG/7uF7F47v9n3f+fZlzMuPD55IMr/9yfXEGXvO
+      f9LYXMItSq98C0BEVCSTcpIAmDdnClkxFgBiYmMZlxXfK3nYouJ547H/4+ffnNFtuj08gtHD
+      4k7oXWGRkUzJS+ox/dRaAAHj85PYsqeSnPRoSiqbMBlV4qNtFBTXMyYnnu37qhjf1gJkpkUT
+      nh1Hzj8fapv+PELXrk/nGSL18l9CSffaO5QZNyKdlx99mxWbq1jR4fo3l87h2Vc+4ZqlZ/On
+      VzdxovX2sOFZTE2zEZ+ZzahkOw/98w0Ka114vH4EMjddtYDXXv+EJj+MGJlHiurki8JG7rx+
+      EWmRRv713w/ZesjBrJmTiVR8zDtrNH9+/FVGTJrEVXNHUX6wiN8+8ymapuPxaySnpfHb2y+l
+      cHsOz7/9GQedGh5/sD5NSk3hzmvPQXI189B/PqC6xcfESWO5+cLJtNTX8Jsn3sOvWrl1yRT+
+      9fJq/Ed9ywXnz2DZB6s477yZhD+9mma/DpLCDVedx/Th8Rxs8AG+tntn426o5cIF06k5WMib
+      myq546o57N+xg7+/8RW6ruP2BQAYM3Ykt10yHX+Lg5//7W1cunSKCiDB7gPVjM1JYHdhDTGR
+      Vnx+jbpGJ8MzotlTWMPY3AR2HqgmPzuOghIHKb4mSq77DnrbXE+wkB9d+AUSUnBVuq07FKg6
+      M5fCHvrn6zz3u7uY9NYy/vTcSlp9Oqhmrpo9jCXX30/+c39g3ogYlu89sfFPWmYGf/zBXL7/
+      22dwiin88LLp3PH4pyxZOJM9G9aTnJnNRdMKeGFNMd+7bhH/ffxpfvqjaylcs5z/luo8+/Or
+      OffWR5g2eRyLh6vc/be3aRJm7v/uQi696Y8IkwmAhJRkLpmZyutr32dfRSOff7aRbQdrGTV1
+      BovGWXhr/UEe+eW13Hf/P4keOYk/fGcBN/35Y/5w56X8+CcPUeWR8WkgpAC7Cyvo0nOTDVyz
+      YBR33fNnrBk/5sLJafxv3SEWXnAuC4Zb+c6DL3L1t77Rfvs5c6aR6i/j50++z+N/vYeMhDU8
+      9PR7vPzEnbz2/iaikpL5xux0/rt8J7+/52ru/9kDlHgkfLogLTf/1LpA6YnhLF0wEkeTi4Wz
+      c4gKNzMsJZIZ49Pxev0sPSef+kY3ly4YSavTy7lnZTE6KwbN0YjmaCDgaMBf34C/rr79X8DR
+      QKC+Ab/D0XbsIFDfAFoPndshzqavNjPr+j9hz8jnk0dvwyTB9JlT0Bw1TJqcz979ZdywdNZJ
+      vXPVqvV8tOkguw5UYDYZOqW9+N46rrpwBpEJyeSYW/mqzMP8yblccvEC7r9tEYnJCUS3PfLy
+      u6vZWliFs9XFyh01PPfArUwYFtPpfV6PhyaXj4rKOupbjvTTo2ISmJibyN23X8Wti8eTnZkI
+      BHj3i/08fv9tnDsuFSFA9/v4dOOBLi3ciDGjSFTcZI8YTlFROdddcjYSsGDGGN5e9hVOj4/1
+      O4o7PfPsG59SUFZLpcPDM699TGFpNQ6Pjumo3sU7K7bxyB+/x8KJw9CBqrLSU2sBfvfDc7lg
+      7oS2syMLW+0D2w75Hj4UgJB+BKJzenccXhSWkFCvuHdId4HcHh+x4TbAAZIBdC+Hza4a6uu5
+      895H+eKDv5MTLXPjJTNZtWkLucOSOLivgCXXzSHub+9S22GE63T7iIywBU8kCZOi4w72BhDH
+      MBwp3L0LKWkpd18j8/YHXyB0jYbmFn7z4DNsr+ph9V9o/OL3j5Gfn8NTv7+Zstv/0PWeo35L
+      r9dDTVU13/n5E7g6lO5HH/8v732QxuO/vwVH7SN8tKPzIPow1y6dxecbD5AzLIn68jJS5s4n
+      N86CrutYzcHBjtFwamOap595lY8/SeKR+26l1VHH6xvLT00Ban73Jwrvc7Wft1sxHC7ZR3f0
+      O9B1vbft+baXSG1mEhAcoQc88ZzGZNWA8+L7a3jgtiuQIlaTPXoUm9duRBPw4x98k+qiIswx
+      CYiyPdQaUxhlbea2pz9uL8Zp+flcc+4o/vbejvb3vfH+Fzx511KaZTuJGVk49uyk7gQaSaEF
+      eG31Xu67fDTjHnsBhOBvz63kgXtv4tl3viQmJpxnX1nR6Rmj2cLd151HUVktPpeTRref6A7p
+      pRUNXLFkDlUvrW6/5mys5cV1FTzxi2/yzvpCokyCJ9/dyp23LKSitAY0H3VNHlSrnV9dP4f7
+      Hn+/rTcP1shYZmUYWXz/e7gCwb+CJTGN6xZO4M1PvuThWy4nacReJo7Lg6qCk/4t7rhpKdVl
+      FagiQHWDi5SMYUiH/QGEEFx42wMnZAv0l0mJzI+3BPvphxexdL3th5OQ5I7z/MG6vL1Ud1gF
+      7opoaypEewtw8WelHHQePUwaWmRnpTE1P4362hpWbChAEzA8O51JeSl4WltZ+eVuMNuIMUNx
+      dXP7c1HRkUSZoKiysdP70tKSmTk2g+aGBpav34tPB3t4GLEWmeLqJmx2O3E2heLqJrKHJVNZ
+      XoXLr2Ox2ciIsbC35MhUZXpaEqMz46msqGZbQRXxCbFo7lZqmz0gSYzMzSAjLowde4ooq3di
+      tdlIijBSWNGAajAye1IuxUWHqPNATFv+IDFmZBZpURb2HyyjoKKR7MxUclOjOVBQQkFlI5Ki
+      kp8Rx96iyvZxgMVmIyXCSEFFQ7t8YeFhJEcY2Vdaz4jcTFIjDWzaX0mMVaWgooG01ESa6+to
+      cgfIGpZCdUUFTp8gb3gqxYVlyFYbKZFGCsobGJaRTH56LEVFpewrD8p/Sgrwzx9fxfnT8pGQ
+      gpV+W7Xd3g3qxq6HYCbth0fP/rQ338GmBL1tQDz39ocpKO+dueUQIY7mlPoWtffcS7GrrQ/X
+      VsG303be0bizJ6QOR0f3X9vaEPzJ00KmECH6jFNSgKg7biNpZGqHgW+H/wq9vRU4srLbRpt9
+      T/DwyPHhLs/hYwC9bTygPvw+1A3txbAQg5dTUgC9tRXN0dDWBWqbsz/SxW9HkqQOQwDRIb3D
+      YLntviMKEOwOHR5HC/3MnAYNMTg4JQWof/Ylyt3Bfrno0OU5zOEBbLAEd+0IyVJwsavd/4Uj
+      PamOd8tAIGEiqJZTETNEiOPSSQGMqozJcPy1sT8m5PeZQN1h6tfcQnyd6DQL1NjYeLz7Q4Q4
+      o2hvASRJIioqaiBlCRGi3+nUBUqIj6PV1dX+eqhitRhx1DvQdJ1Hnn2b4spQCxeiM50UYMPO
+      Yi647cGBkqXX+ffvb2bG2AwANu+rYMPeoWtTFKJvCEWGC/G1plMLYFBlosJtAyVLr2M0DF0j
+      uhDHZ3heDpMTFV5avZeYxCTmDg/j9TX7T+odnUrIjAm5FL1xX68KOVBIiowhIoxDpeXHvznE
+      kOTgwTIe+NH3WLO1mO/dcD5PPfkSqsHEgpmjqCkrZ1NBNWlpyUwdkcLuvQXsKW1gfH4GqCbq
+      ykooa/ActRCmC5aN/kYP2Z08ktFC2nUX0LByNR6XAaPqwll2cgNRQ0ISaZfPw71vN1Wf7SX5
+      svMxR5qofP0jLGMmEp4VQ/PmbdRvKCBixnSsFheVK7ZjzUhi/roXeu1bQgw+NJ+bB/63nqce
+      /AEfvb+cwnoPd33/m+z76iuuvXYJjr/+h8gIC3uKq/njnVdy6V1P8LO7rmPZWx/w1kEdk1Ht
+      2zGAbdJE3Fs3E3feLOLOHoO7qukk3yCTfccVVL7yLnUbC0m54Ur8BTsofv5D/C4/UZNHUvXW
+      cuIvuQiDVSZ+1kgizppySjFIQwxN1n++Dp8k8dSHWwGYMX44kyaNxu/2EBZmJi09lfOm5RFu
+      NSFJ4G6o49kPN4E1ih996/y+VQD3gUIi5sxCFxKWxGiy77gGS/RJxPk0WlC8LbhrWvA3tGBL
+      DadhRxVZP/o2cRMzkM1WEi+ci6I5wZaAorfiaZWwp4Qd/90hzhB0XC4ffj1oRLNxTwmbN2zl
+      gSffprBOcMuFY3jj0+34hIRRPVLc62uq+dNT7/etAmh1VRQ++jr+ujp0Hep2VGJLjjjxF/hc
+      BAxh2IfFYU6MprW4gdipw6hetR1jpBXd66Z22efs+vWThJ81CUnIyEInds7YvvuoEIOOp15d
+      ia/N/fIvj75CdOZwrl44Gbvq4c8vfcnCKZn8/bW1ZMWH8dybn3dyM+80BghoGu6xw3tVOGNK
+      KqV19UgBMzEzMih/pwR97InX0DuXryf5B9fjPVhA4botJF48H7PdQPEHqzBWlNMSG40eFY0a
+      KVO5ejOabiBq3DC8uenoIUvSrwXL1mxvP/Z53Tz32hHXzurPNrCq483lnbvhnRRAVhRuqOll
+      98Oag20HzfDlvlN4vgoefPXI+ePvHjne5ThyvGxb24EXKnaSmRrHBXJomSPEsTnliXJZlogK
+      t1HfeCR0oSRJxETaaWpxEdB0oiNs7cfhdgt+fwC398QVzGhQg+E9BLS6POhCYDYaMBpVhBC0
+      ujyE2ywIAc1ON7IkEd2W/9Fcd/Esrrkk5FkWojOnrACXnz+NuoYWZFnmk7XBqAVLz5lEjaOZ
+      koo6Jo/OoqHZybDkOFZv3MPkUZmE2608/84afP7ACeWRGBtBZmo8U8Zk8fTrq3A0OUlNjCYl
+      IZrp44bz7FufMSY3jahwG1v2HGJ0Tmpb/l2DSY3PSyZneO92777O6LqOEAJF6b2wiwPBKSmA
+      IssEAhor1u/i8oXTgGCslpT4KHz+AAUBDac7GP/G6fEyNjedt1duJm9YEllp8ewtqjihfEoq
+      66mubyIm0o6jyQlAQUk11fVNhNnMVNU1YVAVZk3Kwx8IkBQXic8foDBQjap2DpipKgphYaHZ
+      od5C0zSEEKjq0F5tP6VOsi4EshJ89PCcu64LKmobeX/1VmZPzCM2KozVG/agyBI+fwCrxYjd
+      ZsbpOrnNLs49azTL1+3sdO28mWP45IsdSBKUVjn4akcRw9MTqaoL5j9rYt6pfFaIryGnpABC
+      CMqqHFx23lS27i1hdE4qdpuZmvomlsyfREFJNUWlNVw8byKOJiefbdzLolnjiI8Op7TKcfwM
+      DgsnSTiaWmludaMqMtPHDcegKpRU1uP1B0iIiWTpOZMYPyKd7ftKqK5vZuk5wfxDhDgRpI4b
+      ZWekpRI+5eaBlKfXyEyNY+c7f+JQaTmaptHa3MjYsaH1gd7iTOkCdZJeCEFs5JlhDRoVZjnu
+      3sdCCCprmigoriXRZiRteDIWs+GYz4Q4s+isAAi2nSHWoBCspXqiucXNg4++yfur9+H2BvhD
+      dA3+ubMxzJ9HTn5qt/sWhDjz6KQAlVXdR+wdqjS3OrtVAr8/wB0/fZzN+6pRVRWh+ZFUidr1
+      qzDv38m+a29kxNTjR74oKSnBYDBgNpspKysjPz8fVVWpqKhAkiSSknremSQoh5/KqhoOlpRT
+      XF5LfWMrdq+LvICGIcKONT2J6PQU4tNTMZvP/L2Svd6gO67RaKS1tRW73Y4kSfh8PjRNw2I5
+      dngcIQStrU4OHirlUHk1JZX1tLq8jPE7sSsGzAkxhKUnE5+ZTmRMNIqiHGUKETix+fmhzorV
+      m9la0ACySiAQwGRUaU3PIi3JhqxLlH65iawJOcd0qPF6vRQUFOD3+5k0aRK6rrN3715GjhzJ
+      rl27AIiPj+8yT+73+9m5Zz+vfbiWVRv3U1DmwOkT7eGT5pm83HaoCoB6oNAooyXHYJ86itSL
+      55I9bSI225nRTe1IIBDg008/JRAIYLfbMRgMREREMHr0aLZv3055eTmLFi3CaOy6H1R9vYOV
+      X2zizeUb2LinjJpGD/4O9d5fA7Uk17loBipl2Gk3I+elEbtgemcFSImNxVvXwJmCMSqc6uYm
+      tKM22Vi+ejO65kOoNhTZgBbwYdJ8BLBjFjpKSz2VlY1kpMf2/G6jEbPZzKFDh5g2bRplZWWM
+      GDECTdOwWoMrzrqutyuAz+fjoxVf8PjLK1i3q6LTD9QTEmDy6VBci168iuJXV7FnWBzJN1zM
+      +CsvJCw8/JT/NoONw11Oh8OBxWKhrq6OhIQEAKKiovB4PBgMncdnZeUV/Pulj3jhgw1UNXiP
+      G4sWQNHB0uyBDQdo2XCgswK0bN3L+ivu6Z0vGgSM//tPYdrILtebW11ERMXga61HtcWgB1Qa
+      nC4S9h0gYDOjuwK0NrcAPSuAJElYLBby8/Oprq7GYrGgKApVVcHa+/AMiRCCHbv38Zu/v8Ly
+      TcWnteGNLMB2sJbGXz/Fh8+/T84vbmLsuXOG/GosgKIopKSkAGAwGIiLi6OlpYWSkhJWrlxJ
+      fn4+mqahqioej4dnXvmAvzy3nHLH6W2iflJzWJLRiGoz4m/ona1LZZsdY5iKp6oRxWJCc3tB
+      MaCaZQJOb1ueJiQC6L6jqkxZQbUaCLSe/B/gvMm5XCt/Qaw9nIOOKpIUlfL6OmwGI+XuVvx+
+      AxNTei78h5kwYUL7cV7ekcW3tLQ0INjdeeG1D7n3sfdocPZe91ICrAVVFN/yRyqv28TZP/ku
+      9jB7r71/oBg1ahSjR48GOreet9xyS/s9pWUV3HX/U3z01UH0Xtg+7qQUIHLefNIWjaL+kzX4
+      nR50QziasxmjVSaADa26FuuYLDwHKwnPjaWpqAWtvgbbiGxcB0uwDU+n7sPVyAlpRI9JQU3J
+      xrX2E7xNGiMf+C4Hfv8Useefiyzq0IUJAhqu6gasqTGI1hZUmxmXw4/30CHsE8ehttZQ8ta6
+      k/7oSTMm8N5XXzLd5SI6IoxWt5+o1GS8Ta1E+RVKp80iKvL0CpTX6+XeB5/iibc29tk2Z4aA
+      jvb0R3y89xBnP3IvcYkJfZNRPyF3sN7trlXbvmsf1/74UQore2/v6JNrARSFhhWfYhoxEVN9
+      KVJYNK5GP95N60n69gIcq7djibJiMA9DNujEzhmDbHQjNXuxj8zAEmakef1GwmdNxGRWkRUf
+      rYXlhE+eQfPWAtJvuRRcbgJaPJIko3m8RGcmobe04G2oQ7bFkzgpi4ZtsdgSLbj3n9qsVWZm
+      CsPmz+erZcsYp+joQqDqEi1GE6UjJnHlty4+rWlQn8/H7b96hBeX7+ouNnCvIgHGtXtYdcPP
+      mPvMH4e8EvTEpq27uOLuR6hq6N3AbZ1WgsPL6o45BpAtFvB7QDVjirbib3GjeQKY48IIeHUk
+      PYDu1xBCR7FakBQFdJmEJXNpWvMZ3haBr6YOgYop1o6v0YVwu5HNJjSPDzXMhmqzEGgNmjML
+      IZBkCRHQUMwGkBWEpIDPg2Kz4m9oDnabemD833+KNm1ktyvBQgg2fbmDjZ9/RYTZgk+WSEyK
+      5+xFs7FYTj0cbyAQ4Bd/epJH39hwQoVflSEzMYwxOckkxkaQH2MnvaoOb10jrgMlyPvKMB3d
+      /esGAfim53HeM38iLLzvjf76cyV434EiLr3jrxysdp7Q/WFmmQl5SWQkxZAQG8F0RUOurMdd
+      XoN310HMNU0oba3ySUmvu9u2Twq4cVcc2UrJ3Y35seY80jcvefKVo1PxVBwpuIcLcaC5lUBz
+      982bdpQRnb/pxP4YPSFJEpOnj2Xy9LGdN+s4TV56axlPvHn8wh9hVbjxoslcct5ZjBqR0+0c
+      dyAQoLK4hMJP1lD17HvYSup7dPiXAOP6fXx2/yMs/MOPz4iBMUBzcwu3/+7fxy38kgQTh8fw
+      3SvnM3vaOJKTEjt1qQ7T0tLCoY3bKXjtI/QPvuzcAiRbbdSt3tT7XzFARE0dTZ0s+s0WqKi4
+      hLnX3099S89OP6oM31o0nrtuWkpmRtoJK15jQwObn3mdhsdex+T09XhfQJVJ/sfdTF2y8KTl
+      Pxn6owUQQvDbvz7Dgy98fsz7hiXYuffWC1ly/uzjLpYdRtd1CjZvP8olMiqcc55eduoSDyJS
+      E6P45NJzobyyX/LTNI3fPPziMQu/3Szzh9sv4oYrLzzpGjoyKop5P7qJfWeNZ/sdf8Ja1r1V
+      rRrQKf5//yFvznQiIiNPKo/Bxo7d+3jitS+Oec+MUYn883e3kpWZcVLvlmWZ3Mnjj+oCCSir
+      PnFz5cGMovSvLc9Xm7bx7pqefZ6tRolnfnc9C8+ZdcrdLUmSGDF9MmGvPMTaK+/BUtq16wlg
+      OVTH5hfeZN7tN55SPoMBTdN46N9v0+LpeQrtnIlpPPvQnUSdhqKHvMZ7ASEE/3jhY3oaqyoS
+      3Pf9C0+r8HckZVgG4/7xMzz2rmYBEBwP1D73AS3NQ3dzwT37Cvhg3YEe0/NSI3ji9989rcIP
+      /aAAYTYz37l8HhPyjzRRC2eN5RsLppCaEM3VF87guiWzCLMNXWOvktIyVmws7DH94tk53PTN
+      i3rVwjRnynhi7766x+V/c7mD3SuO3XcezLz8/hrcvu5rf6MCD//sGpKTEk87ny4KoB+jyTkV
+      rlw0neXrdnHRvIlIUtDLa09RBRnJsQgEH36+jdxhSXh9Q9cQ770V62nt4e9mMUj8/LbLen2w
+      KEkSU6/9Bq7s7uf9ZQGVb67oNm2w43K5eOfTLT2mXzgrl5nTJvZKXl0UQPTG+nIHwmwWquoa
+      8fkDyJKMLgSjhqewaddByqsbGJOTxqdf7T7hSBGDkVUb9vaY9o15o8jP65toFFabjfTvXd5j
+      unfLAZqbm/sk795g9+7dbNy4sc2MuZVly5ZRUlJC4cESSmq7hrYBMKlw140XdTvFeSp0eYti
+      7d3540+/3M2d1y+iodnJ1LHZjM1L55yzRjNpVCbRETbG5Kbx6Ze7ezXP/sTpdLJ1X88h2C+e
+      P7FPnWuy552F09a9F5u5wUXFgaI+y/t00HWdTZs2tc+G1dTUIMsy4eHhbNhxoMfx1PCUSEb2
+      YoXS58t4W/ceYueBUgIdDGLu/tN/248f/d8nfS1Cn1JTU0Or299lj2OAaJvCzCnj+zT/2Ph4
+      1NGZ8GXXjSFkXdBcWAKT+laGUyUuLg6v10t9fT1JSUkkJiayevVqdheU9fjM+TNHYzL13sa5
+      /eLRHOgra7BBQEtZFX9wVNJiVKlXVGoUhVpFpVZRiU2PIryPzRJkWSZsVDa+bhRAAlylVX2a
+      /6kiyzK5ubk0NzcTCARwu93s3LmTSZMm8eryLURaZXx+nYAOfu1I5TImN61X5RjaLv2DgECL
+      k9hmL3F4yepwXQD+rNhe66seC3NiLD2tDfubes9ysrfJysrqdH722WcDcNeNF/PXX6XR0uqk
+      ucVJQ1MzDU1Oah3NZKXG9aoMnRRAkiX++esbejWDgcJmMfVLdGjN033RkwDVaukX53rV3nPM
+      U80z9La9rd+8G8POQ8i6wCggSQiSdYHuD6CZul/7OFU6KYDD0ciCs7p6UA1V6h2Nfa4E6jEs
+      RwOO5l41tOsJ3zHcWFXb0AsIXPPaClo2FnSblvr8r2FU7+XVSQGcru6nnkL0jDkmCl2m3by2
+      I74aRyfPpr5ACIG7vGe/CEP00PMbNsX2vLrrqarr1bw6KUB83PHdAIcadfWOPm0FIlIT0Ywq
+      iqfrOoahpJbK0jJSh52codbJoGkazVv3012cCAHYM1P7LO++wpaVipuN3abVf7EVcfUlvdaq
+      dlIA784CNt30m1558WBg9B9/iDS+b0Oix8XF4U2IwHioq2GayadTtnZznypAyYFCjIXdz/QE
+      DDLReZl9lndfETk6Bxd06/vg3LAbl9OFzd47oWE6R4bzB/A5jr2TY+RZkxDNtTTtKjnmfYrN
+      guZ0H/MekIk9dxoNn39F2ISxiNZ6mnaWgKRgTYvBVXKkaT/6feGjh9O8s/t+4mF0b892872F
+      wWAgYsoo9EOfdZte/soyAldc1Cd280IIit5YhiHQfQvnTo4iJSO91/PtaxInjtNcVuoAACAA
+      SURBVKTYrGLqplU1VzSwb/VaJl6woFfyOslfRSZx8Rw0Ry2J34yhecsO7LFGfMKOs7iaxHlj
+      aNp7CEt8OIGATMPKTSQsnkxzYT2WODOeRoHZ4qHwmRVkfHspWksrYXkJ1K9cR+JF89CqDhE5
+      Zx56bSm6ZCT9ljyat+3AYJIwpmfSur+MyNwoWstd2NOijqsA/UX8vKlUvvZZtzWWunE/25at
+      YtLic3s938rSMhpe+JieXEBi5k3uNpDUYCchORkxIg22HuySJgso+Nt/yZ8/64SdX47FSU5S
+      C5x791H4z7fRmx14G3007zqAJMvoAR13SRkCidbCSjxl1dhGZaNYjBjDrVhSE5AkcB6qPNK2
+      aT6athxA6ODcewBPoxdJ+HCVOzDGRBJocuBvCYA/gKukCkmRcBZVoNotBBoHj6nv8LnTccV1
+      H0VC0aHwgWdobDi5DcKPhxbQ2PDAv7E0dd/KaopE+kXzejXP/kJVVeKXzuvZ0nV3Keuff/24
+      wY9PhJNyij9VLDnZ2OJM1K09MZsfU3oqRrNGy/7T8+Y6llN8b7Psdw/jfeKdblsBAfgvmMJF
+      j/2+S3SzU0EIwaePP0fLH55H6cF40T0pm0vefKzPXBb72iWyrrqGTxfcgqWu+4U8r8VA7tP3
+      MmbOzNPKp5P05uR4ht10yWm98FjY809u55aY2aeZ3/B0TnZv+lNl7I2XsebFTzB3UyNLgOH9
+      DSy//xHm/+x7p2XLous6X77+Ho0P/g9jD4VfkyWGf/+qIR27PzYhnphrFuJ8+LVuKxWT28/+
+      H/0Z079t5J6GrVOnv1CxJrjP2ceBbPqR7wcE/TUETExLIfLmi3D/+ZVufzAJ8D/5Hu8fqmDe
+      Qz8lKibmpPPw+Xys/MuTeB5/G+MxgotqZ49hzLlnn/T7Bxvjb7qCT15fia0H/2dTdRPbr/kF
+      jvtuY9qlF57S1GinLlBJjZMLbnvw1CUeZPz79zczY2xGv0WFcLa28sE3foBlZ88zZALwpseS
+      9P3LmXjZBSc0kNM0jR2frePAX57DtLkQ+Rh1lDvSwtQ3/kLGiNxT+IITp7/iAm1852PKbn8I
+      tYeZLghGwpDPn8KoO64ha/TIE1KEBoeDDU++1D/GcDarCU3T8bTtEWxQFQyqgsvjQ1FkZEki
+      oGl9HkWtr7HZ7Uz88z1svuLHPQ5OJcBcUofjJ4/z9r/eIOHC2SSfexZxmemEh4ejqiq6ruN0
+      Oqktr6Ti841Uf7gGZeMBLMcoBBAc+Kbce1OfF/7+ZMIF51K9biv6s8t6jImkBnR4/0u2rdzM
+      jtljSF40m5QZE4iIisJms7XvMdDU2ETFrn1UfbKOxo/XY61s7HsFiI8O5wfXnociy/z+8Tdx
+      e/0smDGacSMy+Ojz7Vy1eDoFJdW8t2oLlbW9O1MyEGSPGUnzQz+i6PYHMXl79nKTAHthNc6H
+      X2PvI6+zLcxMIMyMHG5Dd3pQWj0Ym92oPo0TGTHoEpi+u5TpVy7ptW8ZDCiKwvx7f8CHpdUY
+      Vm7rUQkAjG4/LNtM9bLNlFoM+MPM6GEWZKMB0eTE0OLG2OoNRtlue6bPbXXHjcjg7ZWb+GpH
+      IZmp8QBs3HUQf0DD5fGi6TotTg+BwAkEzB8ijF98DskPfB+v+cTqF0UTWBvdhJc2YN9VRnhx
+      Hba6Vgw+7Zg/+GE0WUK94XzOuefWfjG/7m8sVivnPPIrvGePOqE9ACSCg2R7TQvhhTXY95QT
+      VtGIucXbpfvY53+tsmoHE/KHkTssCafbS35WMlHhNrbuOcTYvHTeXL4Rt8fL1LHZfS1KvyFJ
+      EtMvu4jsJ36GO7pvd3PxG2Rsd17O+b+7u1emWAcrEZGRLHzyfsSls9B70bi2zxVgT2E5ewrL
+      Wb5uJzX1TXh9fiLsVlRV4e0Vm1BlmWanh48+397XovQrkiQx/ry5TH39z7gnZp9QzXUyCIKm
+      Dhn/+jnn3PWd4I6XlZUIIdr31BJC4PEcianqcDjw+3uOXDfYsYeFsegvvyTi1zfitveOW2S/
+      DILXbD7irldUVktRWW37+bptg8Ocoa/IyMsh4dWH+eq/b1Lxj5ex1baeULfmWHgtBixXn8s5
+      d9xAdJsFb3V1NXV1dRw6dIi9e/dy8cUXU1VVRXFxMYsXL6ahoYFt27YRCARYsKB37GgGAoPB
+      wNm3XEPJ3Ols/sM/YeXWHm2hToQzr8M4CDFbLJx989Wct+JprL+4Fmd2App8cmoggNY4O/J1
+      5zHl40dZ9Lu72ws/QExMDLt37yYxMbF955oRI0ZgtwdNNOrq6sjNzR2StkFHI0kSGbnDufip
+      /0fua/8P/eLpuMJOvkXwGeTO6wARkdFs2NFzhLOhxti8dPxe16DbKd7n81G4bScVK9bjWL8d
+      X1EFxlYPBr+OrAuEJBFQJTxWI0pKHJFTRhI/exI5M6ZgDw/rdp67oKCA0tJSoqOjKSgoIDU1
+      lcjISDZs2MDZZ5+N0Whky5YtREREMGPGjNP+hsG0U7wQAkddHQdWraPus820bt2PqGnA5Amg
+      aDqSAF2W8BkV/FE2rCOGET19LGnzp3dWgDNxc+jDBlODSQE6ous6fr+fxnoHzpYWfD4fqqJi
+      sVmJjInBZDadUCE7/J3H+g1P5J4TZTApQEeECIbDdzmdNNU34HG70YWO0WgkLCKC8KhIVFVt
+      ny1Tj344RP8iyzImk4mE5CTg2BtrH4sTKdRnYgV3NJIkoaoq4RERhEdEHPf+TgowLH3ouc8d
+      j9Lyym53iw8RAo5SAFmW+flfX2Z3Yc+h/oYKibGRPPGbbw+0GCEGOV06cBt2FrF2S89x2YcK
+      mb0cQCnEmUmvToN+54ZLyYkx8YubFxMdFUZGUgwWs4lrL5hKfJQdg9GIzWQgJyMBRZZIjI0k
+      LtJG9rBkwsOsXL94KueePZnhyZFEWo2Eh1lD87Qh+pReHcLb7TZURSLCbuG2my/H6nVTtHc7
+      +XnpTBiXx4adh4iPjmLqyBS++Gwd88+ZxSOvruWuyybxf397kwkj0sizxLLc1cx3L8ujqKaF
+      R19a1ZsihgjRiV5VgMKyGi4+7yx8rlZEmJW12w6SbleRhM6KHTUsHW7ntT3NpFgD7CxtJq+0
+      gp0FJWwsG8XCicOQJaioa0b2NKMkZLJvxcu9JpvP76elZfD4EQ91DsdaGurGd72qAG+/9RHL
+      LSY8Hi9CkhACJAR8uB1dwEeALgSfm434fH7W7ihCE/CXx17C5fEhyxsRSKiKTNqmrazaVd1r
+      shkNBsLC+n4D6RBDi15fxXAe3rm9bU1BdDg+bLHhPiqgrLPtXNMFIPDpOv95o/s4OyFC9CaD
+      axnva8ihov3UtfhIiQmjqbWViPh06gs3ETdyLt6aAry6Smb2MM6Mfd/7Hmezg/KqOlSzFW+z
+      A102k5oYRUFpFWNyszhUVkGT08Pk8WOAY8wC6c5K9HYnFYHwHy/KW9udQkd3VqO7GxEBT+e0
+      QNdQ3bq3BYSG7nUeuc/vPq75sNC8CM2H0IaueS8EjdjMJjMtLj+5eSNpcVSRnpqEJgS1dXUE
+      PK24vKGFvBPFFh6FURbYTDqqNQGrWcIaEUu41YjRYiM+0kpy6rD2+7ttAYQQCGTwNqC5faBY
+      kCQdofvRva1IsgJCR5INCHQkxQS6D4GCbIlABDxI1nB0Zy2SJQZ0LyLgA92HZI5G+FpAUlBs
+      cUHFMloQfheapwFkFUk1QcANBhO6zw1CIMkquqcJyWAB2YCsGhCaH93nRTYYkIxWhC4jG4fW
+      dqubNm0iKT0HoxygsGAfJls0ZWV78ESFY7fbUWRBq8tPmCnUBpwI5YV7qGnRGBYVi7u5DCHL
+      uJodVFZWEZ+URmV9C3l5ye33d98FCjQj/L5gIVctyNYodGclktBQbPHobgeSIiMCOrI9Ct1Z
+      gdANgBcskchhKeit1WCwIBlM6C31CC2AZApDMpjRXbVIxvC28YGO0AMgSaBaAS9C9yMbzWit
+      DmRVRchmQEMyRyEbjOguBwIdFBOS0YBkkNGaqlCih14g2NlzgyETJUlC0zQURUEkxoIkIZGI
+      pukoaqjwnyjJWfkkte3JEBsVCUhIksSsWbORJInwvLxONlHdK4BsQYmIAN0HIuhjKZujEb5W
+      hM+JbLIhNB3ZZgJJQbYmIrwtSMYwQEJ4GpDMUUiKgvC5kYx2JMmIpKoIrxvFGo3Q295riUD3
+      OpGt0aBrBN2VpWAtb1WRDGZw1yMZwpEkBYQfSbUime2AAt4mEGYko21IGnt1nEY8bFnZ6QcK
+      Ff6TQpKk9r+fJCmdrndHtwogKW1OE4qxwzUTUofdUKSO7qeKCcnaIc0a1+m5zu8Onh8WR1It
+      KGpbbByl85BEMlq7vA9UJPVILB3JEoUQAtl+7K5Pi9PFl191H3M+xNeXM2IW6ERq/qSk5OPe
+      E+Lrx9BexgsR4jQ5I1qAEMemO0enUxkv9dZ7BhNdFECWJOQh/lHAGfENvYXPV8fK6+/D3uoj
+      oMqMeOQeWr2CyRPGUl5Zjclsoa7iEFHxSUhCR1FkWlucSKpKZEQE0VGR+AMB6mrr2PDjB1Ec
+      LcgpseT99BYiIiOJi4tD0v3UN7agKHL7bJauC4TQCY74JCIjwvAHAridToQktW0gqLaHaomK
+      jibg89DS6sJoNOD3+VENBgIBP7LcYTJA6G1WA6dPFwX4+N8/7ZUXhxhM6EQ2eolo9uJXZV55
+      8hGcipm0hHtwNdXz1voiVNxcdGEKYXYb1oCDx//xELGTzuH6SxYSCARwtjqxWCzMveVqGr/Y
+      RvSMcRhSknG6vKiKjKQYCA8PR5ZAbetYGwxG/H4/zU4XUVFRSEKnoakZRVGJDrfj9mlYTCpe
+      l5Mmpwef34/FYECKiED3ezEYzShoGMOsCNmAq7WV8PAwhB6g5hhbw54MnRSgorL3jM8GCyF3
+      yCBCCsYPFRKEhdtJy5lCwb7dNAcMRMdYWTxtKv9+exnf/eZi/ELhom9cTPrYyfzvxVe45sql
+      2MOj8HncOPYW01JQgpKZhNrURFh4JAG/D6PJjCS82Gw2GhubsdusbVN9goDPh98fwKBAZEQE
+      Pq8bv8+Lzy8wyAJPW6h3XdOQTEbQ/Kiqil8TKG3BghEaHq8Pu67hdnuO+a0nQ6eoECHOTHRd
+      p7y8rP08ISERRVGQZbl9H2NN05BlBavFjMlkpLGpuct7NE2joiLoLqvICvEJCT1EhZCw262o
+      ikxj0+A2Qe+kAEmJ8UinHbds8CAQVNfU9flu8SGGLp3UV1FUFn3ngYGSpdd54YHvDflZihB9
+      S2cFkGXW93KsTlWVCZxG7MbTQdOO5PvZ+i00tPRe3zHEmUGfrgPcctNlRHvqeWdDEWOTrKzY
+      VU1SmEq9bmZmhpXP91bjdvlQ8BMZG0fA2URJbfe7Ap4uz7yzng17z7xBfojTo09XgrftOsjo
+      kcNITklmak4CeTkZ/PKHVzMqI46pw+O5+VsXcva08Sw5K4c/3nUFw+LD+1KcEIOUk4wT3Lt5
+      9+XLVeGntEUQLvmwR4Zz6fwJNLV6kQJe7JHhuD0a588Yga7pfPLlfi6ZM/hid/YH0XHx/PK7
+      S/npzRfxrQVjyBudzwM/uoxf3bKYCJPE4oVzuO/2pdx7/ZGNr2ecNZGsGBOSLHPZgkld3jln
+      5iSSwk7SklRSuOr8SSBJmAzdPyurBu648WJ+cevF5MRZMRrVbqZNen7+aLLGjuOmecfePnf8
+      xDH8+taLuXHhuBN658nQp12g9Rt2sGHjTvyazjurNrdvgieEYMX6XehtTvO6AFXZ16nP/nXi
+      13dcyp8feoqSJh+SBLPPm8+OjRtxp4xl/shEsvOH88IzT7G3w9pPZmY6gYr9HGzUmDAyg9W7
+      Kpmdn0h2RgLPv7oCl9tLdGIyKfEuNhU3MX9SFsUOP0tnjeDtDz9Hj0hganYcJQdLiM/KJtWm
+      8/hr62l2epl59izuvWwM/3h9LWVFxeyq8jB7TAqfbiokMi6Z3MgAP/jrB6gmMy89+hM+ffcj
+      3t5Ww+XzxrBj6048ERn87PLR3PPga2SkxvLBF/s576wcVm0t5aZLZ1NZVMRba4N7RiiqQn7+
+      cH6Smc1Lb69h3OgM3lm1g5lTRrJlyx5cAcEV503m30++SFG9B1k1cs2S2cQY/Dz22lqWLp5J
+      cpjCC299TkZ+HjmxYWzfsYvMUWPICBM8+eZa/McoVn3aAui6wN9WqDVdoIvgP9F2LkSw8AME
+      NL3Xd1EZKsQadEqafIBEbGTQH+K8BbO5eGQEy3ZWgSRx49WLWTqr55oyPimZeSNiWLW3kYum
+      D2PSxFGofjdXXTiT/LFjSLHJ/OKWRewpruOHV88nKyeLJNXFxuJGlszM5c0VW9BkhUUzR7K7
+      oJwvN27jsx2VXL9kBlPPmkSUFAxc4Kgq5ctKiX//6mpijDo79pfwvw83UV9by2vLt3P1kpns
+      3V/Guo3b2VXhZNGMfEDl3Gl5ZOblkGUPsHxT5xD8AXcLz63Yy93fnMm4ieMYFhPGRTNy8QSC
+      JeKxF1fwy3tu5Kqz8zh/4XxsLeU8/PLnTJwxjRhvLf9bc4h7vjmLiRPH4K0pwRmexpIJ8VhT
+      slk0JuGYf/uQNeggoEWoJNhUwM4f77wAEHyyfB0NmIm3m0AI/vO/D3hrzb72Z/yaTpTNjCTJ
+      SCJYyewqKMXtC7TbQfldzdQLG7cuyOGd9UWo6NTW1fGPV78AoLCkBp/Hxa//9TG/vftbpIS3
+      OXm0eVS11FfjtMRx3cx0PtpS2pam88JL7/PI8oPcdH7QsVyS4NorFzEhLZLD1Vj79LMkYbKY
+      sZkU9m3bxhtb6vjr/13aqeCVVdTT2OJER+L1T3dx34+vZstXW9qjiJSXlHLTz59k4QXzSYg0
+      U+NoRgiB3WahobmVpuZWLDYLoFFYUovZbMLZ6mbVijWsLTz2zqM9+gTrzWXI4WkITx0IBdka
+      dfxfMsQp8Yd/vc8937uUqhone/eU4ah1onpaeO/x97n+3PEUFZdx+WWLcfkDPPnCMpoD8NHy
+      dfzsW/OYMNvPJyu/pMVjp0S4aWnRKNHcSFIlrV6dV5dvZcnIcBrdPv717ibmThxOYVEpRTV1
+      mJq9GIwWLpg1koMHS2l2+9lVWElrfTVa2ERyEsP4cMNBFqX4cbVZlEQkJHLnJVNAMfDKG5+Q
+      2mRhybwxVNc2MSI3iQqHF5O/AWwTyYkxUNQId1w2nX1FVaRlpDE5O46tuw+1F25XSwvJZ43g
+      9tRsnnn7M3aXu7DfPIf3Nx7ZbPzypecwLMrIhvWbeHX5Pn5843lk5tby5Htf8d2r5vLD0fD0
+      m5+RMHIMzT6d4m3bKRy3kGljsnA3Oqhr7RqM4TCdVoIz0lIJn3IzQnOhuxqQjDGIQAPoCkpY
+      fJ/8+H3Jvg8eQvO70TSNb//88dA06Clw9RUL2bDiUw7U91yIepOIuCRuPDuNv73+Vb/k130L
+      4G4ESUV4GwgFpPl6879XPurX/JpqK/nb65X9ll/3PsGWOGTFMORj7nRkXF46MXGJAy1GiEFG
+      D07xhk7/PxO449rzyc7OGmgxjkkgEBh0e24dzZkm49dmFkiIwb/GMBR8F840Gb82ChAiRHd0
+      3iUSQbjd0tO9Q46vqyW0EALhq8ff8BVCc6KGjUQJG9EpUFSIIJ0UQNcFZav+MVCy9DqaplNZ
+      dWJBfc8UhBD4HWvxlr+M0FwA+GqWYYiagjn1GiTVNsASDi46KUBZecVAyRGiFxBCEGjaiqf0
+      eRCBjin4G75ECA3LsO+EWoIOHLVN6pnXZ9B7KXzG0EDHW/0+6AGONtEUQKBpK5qrGNWWPSDS
+      HY0QOrgcoPvBFh+MOt7PdFKAlORkWp1njteUzWqisqp6SMxc9AYi4ET3VAWP2+x5gsdttjlC
+      Q3MeHBQKIAIetC8fRy9dH7Q9islFnfkjJFtsv8rRuQWQJFLn/aBfBehL9n3w0ECL0K9IkhQc
+      +Uu0BTfoYJgmCF4fJN0ffc+76CXr2s9F/X4Cm/6DOvv/+tWPu8+mQQ0mE/POGk18mPH4Nw8x
+      hBBoukZAD3QbLnDAUGwolvQOFyTa+0ISIBlQbMMHQLDOCJ8T7eCqrtertkFzeb/K0mdLegvO
+      n8vkMBc7dxv45tIZlBccwG+NIS/OyPsbSrl8Xj5vLtvIOXOn0FhZSpXXyLjhCWxYv4Xtpcc2
+      YR1IGlwOPtzzDruqdqALndy4EVwwcglx9oQBj0AhSTKmpCW4Cv8OeteurDFmFrIlZQAk64yo
+      2g7O2q4Jmg+t+DPUcVf3myx9pgArPvmc8d+9jNuvjSc7xsBWi6CoMcDs2SPZVdRK/rBEyqZP
+      JDbgYNriOZSWNLO7pJSLpg1ne+ngjONf76zjTyt+R1njEVPdQ46DbC7bwE/O+TWpkWkDKF0Q
+      xZaDNfN7eCpeQ/dUBPvXqg1D7NmYEhYjSQO/9ilcdT0nOo+R1gf0mQJkZSbTUFVN8YEiWsfl
+      UVRWR2LmMIoO1WKz6OyvaKLyYBHZU0exZ9tuihoEhyqqMUUOzpkoIQRvbH+5U+E/TL2zjhc3
+      P8vd836OPMAFTJIk1PCR2Ow/Q/fVge5HMkYjKYNnBx0pLAU6jFE6pUWk9qssfaYAe3YXsGd3
+      MMbQhxsOBC9+vqs9fdXmoE/ohr1lnZ/rK4FOE5/mY2flth7T99XsodXbSrh5kES2EBq+mo/R
+      vbWYki5BtQ983/8wUsIopIRRiOqdnRPsCciZc/tVloFvD4cIutDwH8M8XNM1NH3wmI/76tfg
+      r1+D1roPT+lzAy1OJyTVhDrjh8jDF4A1FixRyKnTMMz5KVI/ex722AIIXUOSFYTQQEhI8tdb
+      V0yqmdTIdBrd3YflTghLIMw0SGp/QFIs3R4PFiRzBMrkm1E0b3ChQjUPSBet21IthEBzFAR9
+      g1016P08MBmMyJLMktGXYlS6TuvKksKSMZejyIPDTl73OQi0HOlMioATf9O2wTVlS9uOjqoZ
+      yWAZsPFJ99W6vwHJFIHuaupncQY3IxPHkBzRdRox0hLJ5LRpg2KQqfsbcR54gEDDkUUm3VOF
+      u+hR/I4vBlCywUn3LYA/gGS0gfCBpMAgmDobDEiSREJYUpfrcfZ41EFQ+wsh8Fa+i/DW0ckY
+      SALQ8Za/igg4B0i6wUm3JVu2xSObwlDs8SjWeBR7/9pnDGaWjrm8U1/frJq5bPzVg6L2B51A
+      y06QROfujgj+R2hOAs6igRJuUBKq2k+StKgMzh9xQfv5rKy5jIgfOXACdUSIoCXoUaagQhKI
+      w9eEr//lGsSEFOAk8PjdPPb5X3l920vt15bv/4iHVt5Hi6frlkL9jqQgW4O2QB1bJOnwvj+S
+      gmIZ+NXqwURIAU4QIQTPb3yatcWfI45awdxWsYUn1v4dfYAd7yVJwpSwGKTuxyOG6JnIxrh+
+      lqpnhKeZwNqH8a+6H72pdEBkCCnACVLnrOXzwlU9pm8p20hx/cD3rxXbcCzDbkUyRB+5KBkw
+      xM7FnHrVoHKU1vZ/gH7oC0TlNrQtLwyIDEf5BOs8eu8NAyJIXxBmM9PY2Ds+waUNhwh0WOk9
+      3AZ0LE5F9QVkxQ6syYEkSRgiJ6CG5eMpfQHNdRDLsFtQLBmDqvADSEb7kWOT/Rh39h2dFKCx
+      qYkLZo8aEEH6Ap/X3Ws7RKpK25+qbUalvTAdnm2RJNRBFEhMUsyYM24EEUCSTQMtTrfIOeeD
+      JCF8TpTcRQMiQycFaGkNzRH3RGZ0NlaDDZfPCR03k23ztlIkhfyEQTIbdBihIXQ/kmQcdLU/
+      BCMPKnkXHP/GPqSTAsTGRPd035DF0dDYK61AmDmcmVlns2zfh123BJJgQupk4u2DI/aoEDqB
+      xg14yl9HaC4MkZMwp1yJpFoHWrROiIAHUbcfND9STA7SAFjSdlKA8DA7n6zdQU39IJjSO03s
+      NjNL5k+iobH3zDka3Q3tvrWdENDkaSI42z6wNa0QAl/tCrwVr4EIBgPwO75A99Zgzbp90MQF
+      Eo2l+Nc8BC1tkaBNYajTvo+cMrFf5egyX/bAU++xdsuBfhWiL8hMjWPJ/K6bx50OvoA32JPo
+      OAJuUwi/5g2uvg5wT0P46vFWvg261kkWzXkAX/3q4DTpACOETuCrJ44UfgBvC4EvH8Nwwd/6
+      dUDcp9OgkTEx3LB0FhMyB8/c8+kQH9bWxenga44UHAfH2uIH3BsMQHMd7NYfGCDQvLufpekB
+      dwOi4WDX695mhKOw6/U+pE8tuC5cPIdkbwVv1TQzb85UJqSG8dZnO7lkwWRKCooo8xqZkBHF
+      up0lLDhrJB8tWzOoHeJNqrnb65IUTBsM9kC6r83ZvBtRhN+BENrAh0aR1aCRJYGuaWr/zlj1
+      aZX12usfI6fm8X9XzeL7F0/k4f+tZOHi+Wxfu4ELl8xj5tgRFO/Zx9KlCwgzGzhnyuBx2+uO
+      Fm/PY6NjpfUnwte9ww4QjBWq9c9WR8fEFI6cMrnLZSkyAym6f/dw6FMFGD86G2dDEy6Ph21l
+      Ldxx1Tz27y3gnAUzqCkuoaq5hfK6FlZ9uQuDpLHz0OB2vIm2xvSYFmUdHDNokiGy+wQBkmID
+      eeDXKiRJQplyE3LGbFDNoBiREkajzrobqRuHo76kbzfK/mo7W7bswuvXgC+QJQldCFZ+thG9
+      o7lu5RpWr5Q6XxuEzMqay4d73sXj77y6rMj/v71zjZGrPO/4733Pba47O+v1er0L6xtgw9rY
+      QAgQaqBAkJIKJY2E1PCFNlWrVr1EqipVqlq1qqpK/dAPbRRVEb0oIJo0aj6khUADOGmAgME4
+      vuK7wYuxvbszOzv3yznv+/bDmZkdmx0jLNgZm/l92bmcOefdo+c57+15/o/Fgzc+0ptGXYI9
+      fHs4CTYa09LEak7U7dQORB84AIS7wNY9f4jVKIerVV6yJ5Itn/oVQ+MPaRn4cobe78YPsHZo
+      gj++70+5dWJHe7lzy9g0v3/vN7lh9KYet66J9oHQ+Ftz9ZYjGN0Hw58ONXdDbwAADN9JREFU
+      hBAIL4GIpHqmV9T7NKarjB2Td7B94nb+ffd3KNWL/MHOP8HqgapxVy5rSL1fpeo3lncAY9CN
+      PMavI2OrMdU5kBFEJIWuzAIOMr6q10vePUMIwTfu/r1eN2NZZGQtMroOXTnTfvKHexUSJ31n
+      L5vWlyyfE6zLGF8jY6OEhZMkUMP4DcBCxkY+s8bf7whhEV3/O6EaHM1hkBB4k4/1hTBuv7F8
+      nxhUwEmgSzPoeg1TzaAqJYRtY2o5dDm7jKjdgL5BNzCqM7DRYPxcX+xT9BvLO4C7ClM9B0iE
+      tJDxcazoEMavgbRYTtNxQP/QyL4Cl0x4G5lXMP2wB9BnLF8oW1hYqXXN1wJY2gGVXu+riwy4
+      HOaSp3/r4wCjGwirP3MDekXXZQEhxKDLvApRtTmC/IEPf2F8/MxPV75Bfc5gXewaw8/8X9dg
+      uEbmpxg9kEXpZOAA1xi6fqHrd0ZVMEF/xCz1CwMHuMboGgsUfhnGAw1o03UnWEpJKtWbTP2P
+      i9aafL7U62b0Bc6qe/GzrwIfTgN10nf2pVR6L+nqAJMTY/zLv/4VKiwPgDAd2YDLaYJcSmfq
+      4KXHL7OKelHgVvNY0/m+47OLTmEgm8nyxBN/cZnGfHawYhuJXPd1ah/8AMySjIuVnCYy+VgP
+      W7Y8RvlgdBgF2oNFl+6xQAIsywXdNM6OapvQacPNV2YpP7DTmDVmqU4tJvwfJWiz5EytwK1Q
+      YcEsXafteJ0yf83ztC6LQXRRQvssIoTAGX0Ae2gaP38AdA0rtgEruaX3iTCXoGcPovZ+FxPU
+      sW75KnLjgyu+8nhZyxGAFiCMCe1SiGbH2ra+ZTDtx7lpHdLKlTVLsjqdP7drBZQbxwiL1oHG
+      aEqz50mMT150rLjkoqJ1/gFtwijLMbyxh3vdlK4Y5aN++TSmWXRQ7XsGOXEbRFc2r+KyDqC0
+      QfkNarUi83MnWTU6RSI5fokBN2uSt3UxTVsrZ8nom29aGlJ0OoZg8ewJ7PQkkfQ4pmMMVFhY
+      5PixGVKjaaY2b8KynPBcQiBMqMDQD4noA64EA6pjSVYHYSL/CtPVAQSwb+9zLOROcvzYL/CD
+      gGg0wj13/xaVaoHt234NIe1Q2QtoWXdbKK39uG8Ho1/sOE2fOLZ/D2/teg4jbb72jT8inhhq
+      jwVr1RpvvfAyGI2bSPLFnbcytvkm7DWTrStc1KMMuHoQ0kFOfw219ylQPtbmL8NlMu4+Lbo6
+      QL6Q4Y03/hOtCzTqBq0NfsPnpRe/hUFitGLz5l8lFkvTaYFhb9B81Xojlp7+FxmrgQlV4Hcf
+      3kGx7BPk5yGebP8mmkxgNXek/WKR7Juvs/b02/irxpF3PoCwHWR6lIEHXIUIgVy3Ezm+PXz6
+      R9P9lRHm+zUCVSQoBwgLYjGJJcHxJNIy7Nv/fZ767jd578zrHRIh4YtwAqs7xubmYimRDoMt
+      KMmeUxc4ky0gI82YIxFOI2xLEo26DA0lMcZQw0LpAKeQhR8/g/X8M8iFC4MpwFWKECLMBout
+      6llGWPdYIEKVMeOCQFOt6vBDX2HbhkAFaIr87KXvUCo2pTg6hjyegBFZWxrwt8crS8eEPwl7
+      l4YfLN2Epr/EbHj8hgi/scnl8a0p1k2tAQM68JtDL4Gp1wdzgAFXTFcHMEBhsYFSoKsKjEIK
+      g7ANjiPay57l2iL79j23tKYpDLGF80ynBamY116uXE5PU+iAtZ7i7i3XsXVqDKu60NEAg/Tr
+      SKExRpGwIF2aRVoWqtEAaaEadUw++8nekQGfKS7TAxjiSYkQBjth4wbgejYaSbWsqFd9tA7X
+      d+YzJ9AqQABTQZZbTr3EsXczvFsCBJw+dpSDe/c2J8YGgWbr3h+Qyp0hHQkIlCYadUhYTaGk
+      Zm+ha1UqdU2+bmggQxVmLxwmCUuilEJlZhl0AQOulMtshAnqNc1QyqJa0biBpnquQdUzSCPQ
+      GiJJCJTm/PkjzMzsZvvUbaxJRSm7McqpUfILC/zbP36LU0eOIRBMrLue+x65H9dz2BBkyUff
+      R9aqZAolRhJRULOczbyFFYlTq9cozp2nsWGaaCzBzdvvIDj7LtW3X8HzGqAUdiSCzs0zmAQP
+      uFK6xwJZkEzZ4VM+5xPUBOUoJCI2QhqMNAS+YWjIplRQHNy3i9HhLex5+xizL+9hU/p24sk4
+      q5MOd2wdRwiL46U8+195gagTQUck278wzNrRIZ589gClfJWv3LeNDZOjxJPjVLwYP351P4dn
+      zhN1LGYOvclQ5jzpz9/GzPwZcof2cNfwzay3JQf3PreS92zANURXB1CBweQ0Ii5wA0j4EuUJ
+      LK2xo5KGD5YNtXKA0ZIjvzzJ4df/nFw2QBgX9+//lnjSYTpi+LO71iEQ/PCswy/KcOpMmR/m
+      qrD6AvuOfcDhY3NoBN/+r9f59ftvZvOGEo2FKl9aG+PI+zCWilLJnudoLovY8z0SCUN91OJ5
+      jmNnjtHIRIH0Ct62AdcK3TfCNBTqinTO4I24xC/U2fDAVzk6+yqVhTxeysIog1aSIRHh3ulb
+      iNoex99f5MUDsxBEeHT7RoY9Qc5ziLousdUe6aDGQn4B17Gx5s6wbv0E9yYWefzubfzH7v1U
+      T+/DW/9Fxrwq2x55lN9M7aaUmQUh8FbnObXgo5SFtCT1aoDjOuhgMAQacGV0HwLZguvGNjB9
+      /eeZee1/UZbCOjvPnZMPseb+2zly7k32vP7fRHScqSrk8sd5347iLc7heWuo1wO+t+s4SX+R
+      G3/7KyQtwbd/9HMKIok2hns2DePHFNVyiQc2jnLHeJxD40MczBSYPzeH36jyo5deQ8+cYCYz
+      R2Abzjiz1JTCGINjC6QGywNXDtIaBlwZXR0gEk3z6BN/jeeliMVG2P/UP7H+vi8xevPnQEju
+      mJgi9sZe8gpSpoDSGgIFSnPrGBw+q6hoi5MFw5O7zzE2OsJ7iw1G0nDXlrXsGNMs1hTYDs8f
+      PMFDN02x69Bp4sNjPHtogflsnkemA+yz72ASaYSv0VFBNGLhOhIhJY6vyBd8ysXe1ucdcPXS
+      1QE8L040NoQKDMMbtqAxjGyaprWzFY8PEzc2UVFFA1bgsyoiKWvFOlEiHs3zwkISKQX73zmJ
+      FALLsljnlnloU4R6tYLr2pRknOL19xA8/HWKPy9wOleC+QIjriFtK+qex0jCo1oq4xU05aQh
+      MmSTyzYQF3yctS6p9MoqCg+4drh8OHSzHpBWiiBQ6MBHurRDHIyAo36UKRrUpCRb91gtLY7o
+      JInGAoVCiaGhFKK5axuNxnBNEduxMcpjoR6w640ZFot1/vLJZ5nLhRUYhx3Dr2wa4tYvfI6Y
+      ezfKSIRusC57nqff3IvWBSKBICkSlBxNJRj0AFcjxmj0mdegXkRuegixwsUx4CMcIAxxNgT1
+      Ggaol/LIaCIMcZYGKQXr7Soe4GpFzAmXSzdQ4u2KwLIkkUikHQznOi7S8bAdByEkjXOz5Ip1
+      hBC8feA4AJPDHo/dcx2J0TEco2g0FJZlofyA60bWsnP8BhbXJFi7cwf1QydYdde9zM1nePnF
+      pz/9uzXgE8UszqB2/3MYDOclsdbvXPE2dHWAYjnD/zz/Nxht0B9kcCyLXc//A2I83XyiG7Yl
+      bZJeDEQr0VqQNQ2MURjHJR5P0C6iBSAEifQI6clJhBT453yEKDQDR8Pw5gaSNVMTVGoGx/NQ
+      KkAFGsd1kZYkZrvkKhneOfEzOHWW0+45KqXBKtDViIikIL4aGiVEj0rMdu8BjEErH6UUYrGI
+      tCQ6m4fROFIIhBScHZLYRtIOfUZQiQ5jtGHTRJrMvgZBrbOqOtSGkxysziOEYP97cyyZfvg3
+      V6qxb3GWcr6MSWzElwFYgAK/7nOkOIs3EsOWYKo1pCOwnYEDXJVEhnEe+btmD7DyNYLhIxJi
+      ZHPszo0TcOMEkta8QCCFpLx6CNtxaAXvCCSINGiDh8A+dBYf1czrDY10wa9xqrZIUNfMZSod
+      yWNhld0gMJxYWMCOWBxcnKdsV8KzG4OQgmo6SiQewdWGIJXAtm1sezAHuBoRQoDbW5mW7g4g
+      JfF4HKPDecBFmVdCtCuPLJXNFUshzyJMVQx8HQ6XjGn/1UGYGC+k4PaNSfaeLmI6hOyNMRRz
+      PqvGXOImSolq2EMIgUDQqOuwR5ECa+vUUrrlgAFXwEesAjVtWgjQS0oNplUtuhn/L9oSDuGT
+      GkAHBuWbdmx/6zgVhAZrufDYg9dz+MJRqmV9cbK8gfhqm1myzeGTaDvamg2J5pxi6bqXJsov
+      hzEGpVY+5/TjIIQYtPET4OO08SP1RDqT1y/6tC30oJsmaJZ6CMKnv9amXUur5Rh+Q7d//5Nq
+      iSAw7e9aeb7VYvAhk+5MJrthbD35Wpn5Yoa2dspHIKWFZfWXLMilCCGQfb6rfa218f8BpH9p
+      r7NnBuMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
